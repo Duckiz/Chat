@@ -1,4 +1,21 @@
 <head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+    <title>TypeRacer - Play Typing Games and Race Friends</title>
+    <script>
+        function startSite() {
+          var audio = document.getElementById("myAudio");
+          audio.autoplay = true;
+          audio.loop = true;
+          audio.load();
+      
+          document.getElementById("content").classList.remove("hide");
+          document.getElementById("startButton").style.display = "none";
+        }
+      
+        window.onload = function() {
+          document.getElementById("content").classList.add("hide");
+        };
+      </script>
     <center>
         <p>
         Welcome to Ducks's cool chat website for chatting! >:D
